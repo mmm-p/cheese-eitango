@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA21BE02255819BC002F886F /* cheese.png in Resources */ = {isa = PBXBuildFile; fileRef = FA21BE01255819BC002F886F /* cheese.png */; };
+		FA21BE2E255FE2DA002F886F /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE2D255FE2DA002F886F /* PlayViewController.swift */; };
+		FA21BE36255FE37A002F886F /* tangonyuuryokuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE35255FE37A002F886F /* tangonyuuryokuViewController.swift */; };
+		FA21BE3E255FE877002F886F /* SEIKAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE3D255FE877002F886F /* SEIKAIViewController.swift */; };
+		FA21BE43255FE906002F886F /* cheesenakunaruViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE42255FE906002F886F /* cheesenakunaruViewController.swift */; };
+		FA21BE48255FE9B7002F886F /* chousenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE47255FE9B7002F886F /* chousenViewController.swift */; };
+		FA21BE50255FECDC002F886F /* hozonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE4F255FECDC002F886F /* hozonViewController.swift */; };
+		FAC172CE2556BAC4006F6363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC172CD2556BAC4006F6363 /* AppDelegate.swift */; };
+		FAC172D02556BAC4006F6363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC172CF2556BAC4006F6363 /* SceneDelegate.swift */; };
+		FAC172D22556BAC4006F6363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC172D12556BAC4006F6363 /* ViewController.swift */; };
+		FAC172D52556BAC4006F6363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC172D32556BAC4006F6363 /* Main.storyboard */; };
+		FAC172D72556BAC8006F6363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC172D62556BAC8006F6363 /* Assets.xcassets */; };
+		FAC172DA2556BAC8006F6363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC172D82556BAC8006F6363 /* LaunchScreen.storyboard */; };
+		FAC172E52556BAC9006F6363 /* cheese_eitangoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC172E42556BAC9006F6363 /* cheese_eitangoTests.swift */; };
+		FAC172F02556BAC9006F6363 /* cheese_eitangoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC172EF2556BAC9006F6363 /* cheese_eitangoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAC172E12556BAC9006F6363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC172C22556BAC4006F6363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC172C92556BAC4006F6363;
+			remoteInfo = "cheese eitango";
+		};
+		FAC172EC2556BAC9006F6363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC172C22556BAC4006F6363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC172C92556BAC4006F6363;
+			remoteInfo = "cheese eitango";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA21BE01255819BC002F886F /* cheese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheese.png; sourceTree = "<group>"; };
+		FA21BE2D255FE2DA002F886F /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		FA21BE35255FE37A002F886F /* tangonyuuryokuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tangonyuuryokuViewController.swift; sourceTree = "<group>"; };
+		FA21BE3D255FE877002F886F /* SEIKAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEIKAIViewController.swift; sourceTree = "<group>"; };
+		FA21BE42255FE906002F886F /* cheesenakunaruViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cheesenakunaruViewController.swift; sourceTree = "<group>"; };
+		FA21BE47255FE9B7002F886F /* chousenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chousenViewController.swift; sourceTree = "<group>"; };
+		FA21BE4F255FECDC002F886F /* hozonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hozonViewController.swift; sourceTree = "<group>"; };
+		FAC172CA2556BAC4006F6363 /* cheese eitango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cheese eitango.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC172CD2556BAC4006F6363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAC172CF2556BAC4006F6363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAC172D12556BAC4006F6363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAC172D42556BAC4006F6363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAC172D62556BAC8006F6363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC172D92556BAC8006F6363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAC172DB2556BAC8006F6363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC172E02556BAC9006F6363 /* cheese eitangoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cheese eitangoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC172E42556BAC9006F6363 /* cheese_eitangoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cheese_eitangoTests.swift; sourceTree = "<group>"; };
+		FAC172E62556BAC9006F6363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC172EB2556BAC9006F6363 /* cheese eitangoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cheese eitangoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC172EF2556BAC9006F6363 /* cheese_eitangoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cheese_eitangoUITests.swift; sourceTree = "<group>"; };
+		FAC172F12556BAC9006F6363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC172C72556BAC4006F6363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC172DD2556BAC9006F6363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC172E82556BAC9006F6363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAC172C12556BAC4006F6363 = {
+			isa = PBXGroup;
+			children = (
+				FAC172CC2556BAC4006F6363 /* cheese eitango */,
+				FAC172E32556BAC9006F6363 /* cheese eitangoTests */,
+				FAC172EE2556BAC9006F6363 /* cheese eitangoUITests */,
+				FAC172CB2556BAC4006F6363 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC172CB2556BAC4006F6363 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC172CA2556BAC4006F6363 /* cheese eitango.app */,
+				FAC172E02556BAC9006F6363 /* cheese eitangoTests.xctest */,
+				FAC172EB2556BAC9006F6363 /* cheese eitangoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC172CC2556BAC4006F6363 /* cheese eitango */ = {
+			isa = PBXGroup;
+			children = (
+				FAC172CD2556BAC4006F6363 /* AppDelegate.swift */,
+				FAC172CF2556BAC4006F6363 /* SceneDelegate.swift */,
+				FAC172D12556BAC4006F6363 /* ViewController.swift */,
+				FA21BE2D255FE2DA002F886F /* PlayViewController.swift */,
+				FA21BE35255FE37A002F886F /* tangonyuuryokuViewController.swift */,
+				FAC172D32556BAC4006F6363 /* Main.storyboard */,
+				FA21BE4F255FECDC002F886F /* hozonViewController.swift */,
+				FA21BE47255FE9B7002F886F /* chousenViewController.swift */,
+				FA21BE42255FE906002F886F /* cheesenakunaruViewController.swift */,
+				FA21BE3D255FE877002F886F /* SEIKAIViewController.swift */,
+				FA21BE01255819BC002F886F /* cheese.png */,
+				FAC172D62556BAC8006F6363 /* Assets.xcassets */,
+				FAC172D82556BAC8006F6363 /* LaunchScreen.storyboard */,
+				FAC172DB2556BAC8006F6363 /* Info.plist */,
+			);
+			path = "cheese eitango";
+			sourceTree = "<group>";
+		};
+		FAC172E32556BAC9006F6363 /* cheese eitangoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC172E42556BAC9006F6363 /* cheese_eitangoTests.swift */,
+				FAC172E62556BAC9006F6363 /* Info.plist */,
+			);
+			path = "cheese eitangoTests";
+			sourceTree = "<group>";
+		};
+		FAC172EE2556BAC9006F6363 /* cheese eitangoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC172EF2556BAC9006F6363 /* cheese_eitangoUITests.swift */,
+				FAC172F12556BAC9006F6363 /* Info.plist */,
+			);
+			path = "cheese eitangoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC172C92556BAC4006F6363 /* cheese eitango */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC172F42556BAC9006F6363 /* Build configuration list for PBXNativeTarget "cheese eitango" */;
+			buildPhases = (
+				FAC172C62556BAC4006F6363 /* Sources */,
+				FAC172C72556BAC4006F6363 /* Frameworks */,
+				FAC172C82556BAC4006F6363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cheese eitango";
+			productName = "cheese eitango";
+			productReference = FAC172CA2556BAC4006F6363 /* cheese eitango.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC172DF2556BAC9006F6363 /* cheese eitangoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC172F72556BAC9006F6363 /* Build configuration list for PBXNativeTarget "cheese eitangoTests" */;
+			buildPhases = (
+				FAC172DC2556BAC9006F6363 /* Sources */,
+				FAC172DD2556BAC9006F6363 /* Frameworks */,
+				FAC172DE2556BAC9006F6363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC172E22556BAC9006F6363 /* PBXTargetDependency */,
+			);
+			name = "cheese eitangoTests";
+			productName = "cheese eitangoTests";
+			productReference = FAC172E02556BAC9006F6363 /* cheese eitangoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC172EA2556BAC9006F6363 /* cheese eitangoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC172FA2556BAC9006F6363 /* Build configuration list for PBXNativeTarget "cheese eitangoUITests" */;
+			buildPhases = (
+				FAC172E72556BAC9006F6363 /* Sources */,
+				FAC172E82556BAC9006F6363 /* Frameworks */,
+				FAC172E92556BAC9006F6363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC172ED2556BAC9006F6363 /* PBXTargetDependency */,
+			);
+			name = "cheese eitangoUITests";
+			productName = "cheese eitangoUITests";
+			productReference = FAC172EB2556BAC9006F6363 /* cheese eitangoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC172C22556BAC4006F6363 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					FAC172C92556BAC4006F6363 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					FAC172DF2556BAC9006F6363 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = FAC172C92556BAC4006F6363;
+					};
+					FAC172EA2556BAC9006F6363 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = FAC172C92556BAC4006F6363;
+					};
+				};
+			};
+			buildConfigurationList = FAC172C52556BAC4006F6363 /* Build configuration list for PBXProject "cheese eitango" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC172C12556BAC4006F6363;
+			productRefGroup = FAC172CB2556BAC4006F6363 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC172C92556BAC4006F6363 /* cheese eitango */,
+				FAC172DF2556BAC9006F6363 /* cheese eitangoTests */,
+				FAC172EA2556BAC9006F6363 /* cheese eitangoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC172C82556BAC4006F6363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC172DA2556BAC8006F6363 /* LaunchScreen.storyboard in Resources */,
+				FAC172D72556BAC8006F6363 /* Assets.xcassets in Resources */,
+				FA21BE02255819BC002F886F /* cheese.png in Resources */,
+				FAC172D52556BAC4006F6363 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC172DE2556BAC9006F6363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC172E92556BAC9006F6363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC172C62556BAC4006F6363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA21BE36255FE37A002F886F /* tangonyuuryokuViewController.swift in Sources */,
+				FA21BE48255FE9B7002F886F /* chousenViewController.swift in Sources */,
+				FAC172D22556BAC4006F6363 /* ViewController.swift in Sources */,
+				FA21BE3E255FE877002F886F /* SEIKAIViewController.swift in Sources */,
+				FAC172CE2556BAC4006F6363 /* AppDelegate.swift in Sources */,
+				FA21BE2E255FE2DA002F886F /* PlayViewController.swift in Sources */,
+				FA21BE43255FE906002F886F /* cheesenakunaruViewController.swift in Sources */,
+				FA21BE50255FECDC002F886F /* hozonViewController.swift in Sources */,
+				FAC172D02556BAC4006F6363 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC172DC2556BAC9006F6363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC172E52556BAC9006F6363 /* cheese_eitangoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC172E72556BAC9006F6363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC172F02556BAC9006F6363 /* cheese_eitangoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC172E22556BAC9006F6363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC172C92556BAC4006F6363 /* cheese eitango */;
+			targetProxy = FAC172E12556BAC9006F6363 /* PBXContainerItemProxy */;
+		};
+		FAC172ED2556BAC9006F6363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC172C92556BAC4006F6363 /* cheese eitango */;
+			targetProxy = FAC172EC2556BAC9006F6363 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAC172D32556BAC4006F6363 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC172D42556BAC4006F6363 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAC172D82556BAC8006F6363 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC172D92556BAC8006F6363 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAC172F22556BAC9006F6363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAC172F32556BAC9006F6363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC172F52556BAC9006F6363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cheese eitango/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.cheese-eitango";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAC172F62556BAC9006F6363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cheese eitango/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.cheese-eitango";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAC172F82556BAC9006F6363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cheese eitangoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.cheese-eitangoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cheese eitango.app/cheese eitango";
+			};
+			name = Debug;
+		};
+		FAC172F92556BAC9006F6363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cheese eitangoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.cheese-eitangoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cheese eitango.app/cheese eitango";
+			};
+			name = Release;
+		};
+		FAC172FB2556BAC9006F6363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cheese eitangoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.cheese-eitangoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cheese eitango";
+			};
+			name = Debug;
+		};
+		FAC172FC2556BAC9006F6363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cheese eitangoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.cheese-eitangoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cheese eitango";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC172C52556BAC4006F6363 /* Build configuration list for PBXProject "cheese eitango" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC172F22556BAC9006F6363 /* Debug */,
+				FAC172F32556BAC9006F6363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC172F42556BAC9006F6363 /* Build configuration list for PBXNativeTarget "cheese eitango" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC172F52556BAC9006F6363 /* Debug */,
+				FAC172F62556BAC9006F6363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC172F72556BAC9006F6363 /* Build configuration list for PBXNativeTarget "cheese eitangoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC172F82556BAC9006F6363 /* Debug */,
+				FAC172F92556BAC9006F6363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC172FA2556BAC9006F6363 /* Build configuration list for PBXNativeTarget "cheese eitangoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC172FB2556BAC9006F6363 /* Debug */,
+				FAC172FC2556BAC9006F6363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAC172C22556BAC4006F6363 /* Project object */;
+}
