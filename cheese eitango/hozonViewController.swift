@@ -13,7 +13,7 @@ class hozonViewController: UIViewController {
     var userDefaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
-        let maxSpeed: [String] = [""]//Userdefaults に入れる値？？？？
+        let maxSpeed: [String] = [""]//Userdefaults に入れる値？？？？？？
         userDefaults.set(maxSpeed, forKey:"udMaxSpeed" )
         let getMaxSpeed: [String] = userDefaults.array(forKey: "udMaxSpeed")as![String]
         print(getMaxSpeed)
