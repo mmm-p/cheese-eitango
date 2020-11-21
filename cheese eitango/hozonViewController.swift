@@ -10,14 +10,19 @@ import UIKit
 class hozonViewController: UIViewController {
     @IBOutlet var titleTextField: UITextField!
     
-    var userDefaults = UserDefaults.standard
+    var Userdefaults = UserDefaults.standard
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let maxSpeed: [String] = [""]//Userdefaults に入れる値？？？？？？
-        userDefaults.set(maxSpeed, forKey:"udMaxSpeed" )
-        let getMaxSpeed: [String] = userDefaults.array(forKey: "udMaxSpeed")as![String]
-        print(getMaxSpeed)
+      
+        let tango = Userdefaults.string(forKey: "title")
+        // userdefaults　は左に入れたい箱の名前をつけて右にその動きを入れる　ここではタンゴの箱に取得したものを入れる
+        let maxspeed = Userdefaults.array(forKey: "udMaxSpeed")
+        print(maxspeed)
+        print(tango)
         
+        let getMaxSpeed: [Int] = Userdefaults.array(forKey: "udMaxSpeed") as! [Int]
         
         
         
@@ -25,6 +30,13 @@ class hozonViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func savetango(){
+        
+        Userdefaults.set(titleTextField.text, forKey: "title")
+        let maxspeed: [Int] = []
+        Userdefaults.set(maxspeed, forKey: "udMaxSpeed")
+        
+    }
 
     /*
     // MARK: - Navigation
