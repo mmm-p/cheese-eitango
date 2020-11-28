@@ -18,7 +18,7 @@ class hozonViewController: UIViewController {
         
         
        
-        // userdefaults　は左に入れたい箱の名前をつけて右にその動きを入れる　ここではタンゴの箱に取得したものを入れる
+        // userdefaults　は左に入れたい箱の名前をつけて右その動きを入れる　ここではタンゴの箱に取得したものを入れる
        
         
         

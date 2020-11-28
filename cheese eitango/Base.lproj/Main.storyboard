@@ -185,10 +185,6 @@
                                     <segue destination="afJ-R1-RRe" kind="showDetail" id="VRj-3v-fp4"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-Zw-cH5">
-                                <rect key="frame" x="35" y="197" width="345" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-WO-PDr">
                                 <rect key="frame" x="60" y="661" width="300" height="30"/>
                                 <subviews>
@@ -233,6 +229,10 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-Zw-cH5">
+                                <rect key="frame" x="35" y="236" width="345" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0xn-d4-Jrb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -296,12 +296,19 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-sp-r0I">
+                                <rect key="frame" x="125" y="402" width="164" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RXb-0P-XXA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="DWc-Kk-8fR" id="g3K-8N-cFV"/>
+                        <outlet property="titleTextField" destination="xhJ-sp-r0I" id="awL-7i-hqS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ue7-m3-OWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

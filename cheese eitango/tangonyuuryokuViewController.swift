@@ -8,10 +8,14 @@
 import UIKit
 
 class tangonyuuryokuViewController: UIViewController {
-
+    var  saveData: UserDefaults = UserDefaults.standard
     @IBOutlet var label: UILabel!
+    @IBOutlet var titleTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        
+         
 
         // Do any additional setup after loading the view.
     }
