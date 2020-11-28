@@ -7,20 +7,56 @@
 
 import UIKit
 
-class PlayViewController: UIViewController {
-
+class PlayViewController: UIViewController,UITextViewDelegate {
+   
+    var  saveData: UserDefaults = UserDefaults.standard
+    var btext = ""
+    
+   
+    @IBOutlet var label: UILabel!
+    
+    @IBOutlet var cheeseImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        
+        
+        let tango  = saveData.object(forKey: "tango") as! String
+        let tangocount = tango.unicodeScalars.count
+        print(tango)
+        print(tangocount)
+        
+        for _ in tango{
+         btext += "_ "
+         
+        }
+        label.text = btext
+        
+       
     }
     
-    @IBOutlet var label: UILabel!
-    @IBOutlet var cheeseImageView: UIImageView!
-    @IBAction func wakatta(){
+    
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+           super.viewDidAppear(animated)
+        
+        //label!.text = String((UserDefaults.standard.objectIsForced(forKey: "title") as!
+                                //String.length))
+       
+        
         
     }
-
+    
+    
+    @IBAction func wakatta(){
+        
+         
+        
+    }
+ 
     
 
     /*
