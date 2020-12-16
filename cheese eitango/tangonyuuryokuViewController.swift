@@ -7,8 +7,9 @@
 
 import UIKit
 
-class tangonyuuryokuViewController: UIViewController {
+class tangonyuuryokuViewController: UIViewController, UITextViewDelegate {
     var  saveData: UserDefaults = UserDefaults.standard
+   
     @IBOutlet var label: UILabel!
     @IBOutlet var titleTextField: UITextField!
     override func viewDidLoad() {
@@ -19,17 +20,19 @@ class tangonyuuryokuViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tangocheck(){
+        let wtango = saveData.object(forKey: "tango") as! String
+        saveData.set(titleTextField.text, forKey: "new")
+        let newtango = saveData.object(forKey: "new")as! String
+        if wtango == newtango{
+            print("OK")
+        }
+        else{
+            print("違う")
+        }
+        }
     }
-    */
+    
+    
 
-}
+

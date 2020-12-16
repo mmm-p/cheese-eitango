@@ -17,6 +17,7 @@ class PlayViewController: UIViewController,UITextViewDelegate {
     
     @IBOutlet var cheeseImageView: UIImageView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +38,29 @@ class PlayViewController: UIViewController,UITextViewDelegate {
        
     }
     
+    @IBAction func check (sender: UIButton){
+       
+               
+        let tango  = saveData.object(forKey: "tango") as! String
+       
+        
+         if let alphabet = sender.currentTitle{
+        
+        print(alphabet)
+            if tango.uppercased().contains(alphabet){
+            print("一致")
+        
+          }
+          else{
+            print("不一致")
+          }
+       
+    }
+    }
+    
+    
+    
+
     
     
     

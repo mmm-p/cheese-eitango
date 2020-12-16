@@ -26,7 +26,7 @@
                                 </state>
                                 <connections>
                                     <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdL-Cc-JgN"/>
-                                    <segue destination="1Cf-P3-ySu" kind="presentation" id="wIf-PT-IKF"/>
+                                    <segue destination="1Cf-P3-ySu" kind="show" id="Wdj-ut-UI3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hn-aa-Gdo">
@@ -39,7 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="play" destination="BYZ-38-t0r" eventType="touchUpOutside" id="lEs-Tk-WN0"/>
-                                    <segue destination="Z7R-OX-7SM" kind="show" id="KaJ-RJ-GPI"/>
+                                    <segue destination="Z7R-OX-7SM" kind="show" id="E9e-iC-LVe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,38 +114,65 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBZ-kR-Bk7">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="M"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="77T-2k-7i7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFB-fH-URL">
                                         <rect key="frame" x="31" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="N"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="Wdc-kw-bnt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKE-nt-WJI">
                                         <rect key="frame" x="62" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="P"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="OBZ-wc-oq3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6v-5e-RH6">
                                         <rect key="frame" x="93" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="Q"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="iXr-g3-YPb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdH-t6-szu">
                                         <rect key="frame" x="124" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="R"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="N6E-RY-2yA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK0-4v-Ep0">
                                         <rect key="frame" x="155" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="S"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="eJW-Cd-fZO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kve-GW-bhp">
                                         <rect key="frame" x="186" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="T"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="QKB-iu-NFh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaH-HT-PWP">
                                         <rect key="frame" x="217" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="V"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="guu-ei-uY1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us2-De-Auc">
                                         <rect key="frame" x="248" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="W"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="G6Z-K8-sR3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -155,14 +182,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPz-42-Nf7">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="eVJ-c1-0GF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flS-cb-nNl">
                                         <rect key="frame" x="33" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="Y"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="W6c-nt-Dmc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAB-sB-KKj">
                                         <rect key="frame" x="66" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="Z"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="MuY-yV-nmS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -188,25 +224,40 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-WO-PDr">
                                 <rect key="frame" x="60" y="661" width="300" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI3-g6-xto">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI3-g6-xto">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="B"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="Jqn-hK-sfA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3f-8b-L95">
                                         <rect key="frame" x="30" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="C"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="LCE-Op-fge"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdt-7v-kkl">
                                         <rect key="frame" x="60" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="D"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="Qcs-0u-vGJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C5-jy-4n7">
                                         <rect key="frame" x="90" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="F"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="4Sd-Ca-RWa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SND-sl-jgZ">
                                         <rect key="frame" x="120" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="G"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="9BC-MM-XcM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIG-Kg-Dcd">
                                         <rect key="frame" x="150" y="0.0" width="30" height="30"/>
@@ -214,18 +265,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2h-N8-pmU">
                                         <rect key="frame" x="180" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="H"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="OOR-6V-rVP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pY-NC-od4">
                                         <rect key="frame" x="210" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="J"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="wbs-fj-LvM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7t-ia-hrl">
                                         <rect key="frame" x="240" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="K"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="7Y3-ge-3s4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLb-1t-M02">
                                         <rect key="frame" x="270" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="L"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="W9E-YA-TF7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -293,6 +356,11 @@
                                 <items>
                                     <navigationItem title="Title" id="wd2-Q0-UJM">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="m3b-3f-cxT"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="HSP-FF-Qd5">
+                                            <connections>
+                                                <action selector="tangocheck" destination="afJ-R1-RRe" id="G2O-G0-NvP"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
