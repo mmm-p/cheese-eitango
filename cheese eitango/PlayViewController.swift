@@ -48,11 +48,11 @@ class PlayViewController: UIViewController,UITextViewDelegate {
         
         print(alphabet)
             if tango.uppercased().contains(alphabet){
-            print("一致")
+                
         
           }
           else{
-            print("不一致")
+            
           }
        
     }

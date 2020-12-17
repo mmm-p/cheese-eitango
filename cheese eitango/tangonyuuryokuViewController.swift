@@ -25,10 +25,10 @@ class tangonyuuryokuViewController: UIViewController, UITextViewDelegate {
         saveData.set(titleTextField.text, forKey: "new")
         let newtango = saveData.object(forKey: "new")as! String
         if wtango == newtango{
-            print("OK")
+            self.performSegue(withIdentifier: "seikai", sender: nil)
         }
         else{
-            print("違う")
+            self.performSegue(withIdentifier: "zannen", sender: nil)
         }
         }
     }
