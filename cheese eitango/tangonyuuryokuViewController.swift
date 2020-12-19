@@ -23,14 +23,30 @@ class tangonyuuryokuViewController: UIViewController, UITextViewDelegate {
     @IBAction func tangocheck(){
         let wtango = saveData.object(forKey: "tango") as! String
         saveData.set(titleTextField.text, forKey: "new")
-        let newtango = saveData.object(forKey: "new")as! String
-        if wtango == newtango{
-            self.performSegue(withIdentifier: "seikai", sender: nil)
-        }
-        else{
-            self.performSegue(withIdentifier: "zannen", sender: nil)
-        }
-        }
+        let alert: UIAlertController = UIAlertController(title: "保存", message: "英単語を保存します",
+        preferredStyle: .alert)
+        alert.addAction(
+            UIAlertAction(
+                title:"OK",
+                style: .default,
+                handler: { action in
+                    print("ボタンが押されました")
+        
+                }))
+       
+        
+        
+        
+    let newtango = saveData.object(forKey: "new")as! String
+        
+    if wtango == newtango{
+          self.performSegue(withIdentifier: "seikai", sender: nil)
+    }
+    else{
+        self.performSegue(withIdentifier: "zannen", sender: nil)
+    }
+        present(alert, animated: true, completion: nil)
+    }
     }
     
     

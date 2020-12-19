@@ -342,8 +342,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4PO-l4-Gx5">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4PO-l4-Gx5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="wd2-Q0-UJM">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="m3b-3f-cxT"/>
@@ -355,36 +356,30 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-sp-r0I">
-                                <rect key="frame" x="125" y="402" width="164" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="単語を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWc-Kk-8fR">
-                                <rect key="frame" x="53" y="230" width="309" height="101"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="単語を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWc-Kk-8fR">
+                                <rect key="frame" x="53" y="230" width="310" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-sp-r0I">
+                                <rect key="frame" x="89" y="402" width="212" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RXb-0P-XXA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="DWc-Kk-8fR" firstAttribute="leading" secondItem="RXb-0P-XXA" secondAttribute="leading" constant="53" id="1QB-vs-f5Q"/>
-                            <constraint firstItem="RXb-0P-XXA" firstAttribute="trailing" secondItem="xhJ-sp-r0I" secondAttribute="trailing" constant="125" id="Xz2-tR-Cao"/>
-                            <constraint firstItem="DWc-Kk-8fR" firstAttribute="top" secondItem="4PO-l4-Gx5" secondAttribute="bottom" constant="34" id="edg-8u-iD1"/>
-                            <constraint firstItem="RXb-0P-XXA" firstAttribute="trailing" secondItem="DWc-Kk-8fR" secondAttribute="trailing" constant="52" id="fFD-rL-pkO"/>
-                            <constraint firstItem="xhJ-sp-r0I" firstAttribute="leading" secondItem="RXb-0P-XXA" secondAttribute="leading" constant="125" id="tQC-SE-jlz"/>
-                            <constraint firstItem="xhJ-sp-r0I" firstAttribute="top" secondItem="DWc-Kk-8fR" secondAttribute="bottom" constant="179" id="zEn-6O-90z"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8eC-gh-uNT"/>
                     <connections>
                         <outlet property="label" destination="DWc-Kk-8fR" id="g3K-8N-cFV"/>
                         <outlet property="titleTextField" destination="xhJ-sp-r0I" id="awL-7i-hqS"/>
                         <segue destination="U41-6s-dG1" kind="show" identifier="seikai" id="E72-Ds-gSY"/>
-                        <segue destination="tVW-s8-WRb" kind="show" identifier="zannnen" id="9iA-ln-9rV"/>
+                        <segue destination="tVW-s8-WRb" kind="show" identifier="zannen" id="9iA-ln-9rV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ue7-m3-OWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -399,26 +394,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="正解です！チーズが残りました！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsa-X3-RNZ">
-                                <rect key="frame" x="20" y="225" width="374" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正解です！チーズが残りました！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsa-X3-RNZ">
+                                <rect key="frame" x="59.5" y="225" width="334.5" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                 <color key="textColor" cyan="0.0" magenta="0.0001772865653" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cheese.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUP-x5-Ath">
-                                <rect key="frame" x="75" y="445" width="264" height="301"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUP-x5-Ath">
+                                <rect key="frame" x="86" y="368" width="280" height="301"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EJz-yK-gBc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="EJz-yK-gBc" firstAttribute="trailing" secondItem="aUP-x5-Ath" secondAttribute="trailing" constant="75" id="Gj4-dQ-IgF"/>
-                            <constraint firstItem="aUP-x5-Ath" firstAttribute="leading" secondItem="EJz-yK-gBc" secondAttribute="leading" constant="75" id="Hql-2T-qKL"/>
-                            <constraint firstItem="lsa-X3-RNZ" firstAttribute="leading" secondItem="EJz-yK-gBc" secondAttribute="leading" constant="20" id="Sgg-pJ-XVH"/>
-                            <constraint firstItem="EJz-yK-gBc" firstAttribute="trailing" secondItem="lsa-X3-RNZ" secondAttribute="trailing" constant="20" id="Sx5-im-Fu0"/>
-                            <constraint firstItem="aUP-x5-Ath" firstAttribute="top" secondItem="lsa-X3-RNZ" secondAttribute="bottom" constant="120" id="sNM-HY-VYU"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="R8R-rQ-ai2"/>
                     <connections>
