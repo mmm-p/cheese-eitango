@@ -14,6 +14,11 @@
 		FA21BE43255FE906002F886F /* cheesenakunaruViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE42255FE906002F886F /* cheesenakunaruViewController.swift */; };
 		FA21BE48255FE9B7002F886F /* chousenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE47255FE9B7002F886F /* chousenViewController.swift */; };
 		FA21BE50255FECDC002F886F /* hozonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE4F255FECDC002F886F /* hozonViewController.swift */; };
+		FA56631A25A1FB9E00DCB36C /* cheese3.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56631925A1FB9E00DCB36C /* cheese3.png */; };
+		FA56631F25A1FBA800DCB36C /* cheese4.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56631E25A1FBA800DCB36C /* cheese4.png */; };
+		FA56632425A1FBB400DCB36C /* cheese5.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56632325A1FBB400DCB36C /* cheese5.png */; };
+		FA56633125A1FE4700DCB36C /* cheese2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56633025A1FE4600DCB36C /* cheese2.png */; };
+		FA56633C25A1FEC600DCB36C /* cheese1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56633B25A1FEC600DCB36C /* cheese1.png */; };
 		FAC172CE2556BAC4006F6363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC172CD2556BAC4006F6363 /* AppDelegate.swift */; };
 		FAC172D02556BAC4006F6363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC172CF2556BAC4006F6363 /* SceneDelegate.swift */; };
 		FAC172D22556BAC4006F6363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC172D12556BAC4006F6363 /* ViewController.swift */; };
@@ -49,6 +54,11 @@
 		FA21BE42255FE906002F886F /* cheesenakunaruViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cheesenakunaruViewController.swift; sourceTree = "<group>"; };
 		FA21BE47255FE9B7002F886F /* chousenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chousenViewController.swift; sourceTree = "<group>"; };
 		FA21BE4F255FECDC002F886F /* hozonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hozonViewController.swift; sourceTree = "<group>"; };
+		FA56631925A1FB9E00DCB36C /* cheese3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheese3.png; sourceTree = "<group>"; };
+		FA56631E25A1FBA800DCB36C /* cheese4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheese4.png; sourceTree = "<group>"; };
+		FA56632325A1FBB400DCB36C /* cheese5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheese5.png; sourceTree = "<group>"; };
+		FA56633025A1FE4600DCB36C /* cheese2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheese2.png; sourceTree = "<group>"; };
+		FA56633B25A1FEC600DCB36C /* cheese1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheese1.png; sourceTree = "<group>"; };
 		FAC172CA2556BAC4006F6363 /* cheese eitango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cheese eitango.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC172CD2556BAC4006F6363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC172CF2556BAC4006F6363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +130,11 @@
 				FA21BE35255FE37A002F886F /* tangonyuuryokuViewController.swift */,
 				FAC172D32556BAC4006F6363 /* Main.storyboard */,
 				FA21BE4F255FECDC002F886F /* hozonViewController.swift */,
+				FA56633025A1FE4600DCB36C /* cheese2.png */,
+				FA56631925A1FB9E00DCB36C /* cheese3.png */,
+				FA56633B25A1FEC600DCB36C /* cheese1.png */,
+				FA56631E25A1FBA800DCB36C /* cheese4.png */,
+				FA56632325A1FBB400DCB36C /* cheese5.png */,
 				FA21BE47255FE9B7002F886F /* chousenViewController.swift */,
 				FA21BE42255FE906002F886F /* cheesenakunaruViewController.swift */,
 				FA21BE3D255FE877002F886F /* SEIKAIViewController.swift */,
@@ -254,8 +269,13 @@
 			files = (
 				FAC172DA2556BAC8006F6363 /* LaunchScreen.storyboard in Resources */,
 				FAC172D72556BAC8006F6363 /* Assets.xcassets in Resources */,
+				FA56633C25A1FEC600DCB36C /* cheese1.png in Resources */,
 				FA21BE02255819BC002F886F /* cheese.png in Resources */,
 				FAC172D52556BAC4006F6363 /* Main.storyboard in Resources */,
+				FA56631A25A1FB9E00DCB36C /* cheese3.png in Resources */,
+				FA56633125A1FE4700DCB36C /* cheese2.png in Resources */,
+				FA56631F25A1FBA800DCB36C /* cheese4.png in Resources */,
+				FA56632425A1FBB400DCB36C /* cheese5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,8 @@ import UIKit
 class chousenViewController: UIViewController {
 
     @IBAction func mouichido(){
-        
+       
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()

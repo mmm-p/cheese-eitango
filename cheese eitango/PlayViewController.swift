@@ -15,7 +15,8 @@ class PlayViewController: UIViewController,UITextViewDelegate {
    
     @IBOutlet var label: UILabel!
     
-    @IBOutlet var cheeseImageView: UIImageView!
+    @IBOutlet  var cheeseImageView: UIImageView!
+    
     
     
     override func viewDidLoad() {
@@ -36,24 +37,31 @@ class PlayViewController: UIViewController,UITextViewDelegate {
         label.text = btext
         
        
+       
+        
+       
     }
     
     @IBAction func check (sender: UIButton){
        
                
         let tango  = saveData.object(forKey: "tango") as! String
-       
+        let tangocount = tango.unicodeScalars.count
+        
         
          if let alphabet = sender.currentTitle{
         
         print(alphabet)
             if tango.uppercased().contains(alphabet){
+                print("一致")
                 
+                
+          }else{
         
-          }
-          else{
             
+            cheeseImageView.image = UIImage(named: "cheese2")
           }
+            
        
     }
     }
@@ -64,15 +72,7 @@ class PlayViewController: UIViewController,UITextViewDelegate {
     
     
     
-    override func viewDidAppear(_ animated: Bool) {
-           super.viewDidAppear(animated)
-        
-        //label!.text = String((UserDefaults.standard.objectIsForced(forKey: "title") as!
-                                //String.length))
-       
-        
-        
-    }
+    
     
     
     @IBAction func wakatta(){

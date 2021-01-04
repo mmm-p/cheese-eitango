@@ -11,7 +11,8 @@ class cheesenakunaruViewController: UIViewController {
 
     @IBOutlet var label: UILabel!
     @IBAction func chousen(){
-        
+        self.performSegue(withIdentifier: "chousen", sender: nil)
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()

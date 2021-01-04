@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cheese_eitango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ood-6I-nt2">
@@ -46,6 +46,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ghO-ln-lAN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,12 +203,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _ _ " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4X-9m-7FS">
-                                <rect key="frame" x="60" y="516.5" width="309" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWW-6b-wgz">
                                 <rect key="frame" x="124" y="139" width="185" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -221,7 +216,7 @@
                                     <segue destination="afJ-R1-RRe" kind="show" id="6oS-LT-IaX"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-WO-PDr">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-WO-PDr">
                                 <rect key="frame" x="60" y="661" width="300" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI3-g6-xto">
@@ -292,8 +287,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-Zw-cH5">
-                                <rect key="frame" x="35" y="236" width="345" height="179"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _ _ " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4X-9m-7FS">
+                                <rect key="frame" x="100" y="556" width="214" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-Zw-cH5">
+                                <rect key="frame" x="6" y="209" width="403" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -301,24 +303,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0xn-d4-Jrb" firstAttribute="trailing" secondItem="gdW-WO-PDr" secondAttribute="trailing" constant="54" id="56Q-HQ-q5L"/>
-                            <constraint firstItem="gdW-WO-PDr" firstAttribute="top" secondItem="Z4X-9m-7FS" secondAttribute="bottom" constant="124" id="84j-VH-MOW"/>
                             <constraint firstItem="3fN-xu-gsy" firstAttribute="top" secondItem="x0F-Cv-2xx" secondAttribute="bottom" id="HxX-DL-zhJ"/>
                             <constraint firstItem="x0F-Cv-2xx" firstAttribute="leading" secondItem="0xn-d4-Jrb" secondAttribute="leading" constant="60" id="I9M-1P-Ist"/>
-                            <constraint firstItem="Z4X-9m-7FS" firstAttribute="leading" secondItem="0xn-d4-Jrb" secondAttribute="leading" constant="60" id="JV3-Ee-aD3"/>
                             <constraint firstItem="0xn-d4-Jrb" firstAttribute="trailing" secondItem="3fN-xu-gsy" secondAttribute="trailing" constant="171" id="MAb-3G-ptI"/>
                             <constraint firstItem="gdW-WO-PDr" firstAttribute="leading" secondItem="0xn-d4-Jrb" secondAttribute="leading" constant="60" id="QK7-jF-BEg"/>
                             <constraint firstItem="0xn-d4-Jrb" firstAttribute="trailing" secondItem="x0F-Cv-2xx" secondAttribute="trailing" constant="76" id="Tag-bv-Bon"/>
-                            <constraint firstItem="0xn-d4-Jrb" firstAttribute="trailing" secondItem="Z4X-9m-7FS" secondAttribute="trailing" constant="45" id="and-rv-NPl"/>
                             <constraint firstItem="0xn-d4-Jrb" firstAttribute="bottom" secondItem="3fN-xu-gsy" secondAttribute="bottom" constant="13" id="fjK-Pe-ex7"/>
                             <constraint firstItem="3fN-xu-gsy" firstAttribute="leading" secondItem="0xn-d4-Jrb" secondAttribute="leading" constant="147" id="hVc-G9-dgK"/>
-                            <constraint firstItem="x0F-Cv-2xx" firstAttribute="top" secondItem="Z4X-9m-7FS" secondAttribute="bottom" constant="149" id="pFq-hS-XPN"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="rnL-p6-ZU3"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="cheeseImageView" destination="2aG-Zw-cH5" id="06E-jl-7s1"/>
+                        <outlet property="cheeseImageView" destination="2aG-Zw-cH5" id="MyL-Zh-Edy"/>
                         <outlet property="label" destination="Z4X-9m-7FS" id="iEV-ko-JZI"/>
                     </connections>
                 </viewController>
@@ -395,7 +393,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正解です！チーズが残りました！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsa-X3-RNZ">
-                                <rect key="frame" x="59.5" y="225" width="334.5" height="100"/>
+                                <rect key="frame" x="40" y="172" width="334.5" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
@@ -403,7 +401,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUP-x5-Ath">
-                                <rect key="frame" x="86" y="368" width="280" height="301"/>
+                                <rect key="frame" x="67" y="359" width="280" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -428,14 +426,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="残念！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbn-pa-a9m">
-                                <rect key="frame" x="42" y="351.5" width="331" height="32.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="残念！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbn-pa-a9m">
+                                <rect key="frame" x="73" y="351" width="269" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZM-Rl-JBj">
-                                <rect key="frame" x="59" y="563" width="297" height="155"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZM-Rl-JBj">
+                                <rect key="frame" x="74" y="572" width="268" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                 <state key="normal" title="もう一度最初から挑戦する">
@@ -443,17 +443,12 @@
                                 </state>
                                 <connections>
                                     <action selector="chousen" destination="tVW-s8-WRb" eventType="touchUpInside" id="7Ge-rm-57S"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="chousen" id="MPb-4n-W13"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gJN-ZL-lpK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="7ZM-Rl-JBj" firstAttribute="leading" secondItem="gJN-ZL-lpK" secondAttribute="leading" constant="59" id="LUn-Xs-4sJ"/>
-                            <constraint firstItem="gJN-ZL-lpK" firstAttribute="trailing" secondItem="7ZM-Rl-JBj" secondAttribute="trailing" constant="58" id="Ret-Xo-Noc"/>
-                            <constraint firstItem="Gbn-pa-a9m" firstAttribute="leading" secondItem="gJN-ZL-lpK" secondAttribute="leading" constant="42" id="dSe-Pg-4Y8"/>
-                            <constraint firstItem="gJN-ZL-lpK" firstAttribute="trailing" secondItem="Gbn-pa-a9m" secondAttribute="trailing" constant="41" id="ylp-mp-xyF"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bci-U9-Sm3"/>
                     <connections>
@@ -493,6 +488,7 @@
     </scenes>
     <resources>
         <image name="cheese.png" width="1000" height="1000"/>
+        <image name="cheese1.png" width="283.20001220703125" height="419.51998901367188"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
