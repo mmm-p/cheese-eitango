@@ -105,7 +105,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="cSC-cq-qCy">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RvZ-Fm-k4z"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RvZ-Fm-k4z">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="eIX-nd-asz"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -318,6 +322,7 @@
                     <connections>
                         <outlet property="cheeseImageView" destination="2aG-Zw-cH5" id="MyL-Zh-Edy"/>
                         <outlet property="label" destination="Z4X-9m-7FS" id="iEV-ko-JZI"/>
+                        <segue destination="Xnu-jz-YzX" kind="show" identifier="nocheese" id="7ep-3K-tzY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWb-Zo-CoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -345,7 +350,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="wd2-Q0-UJM">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="m3b-3f-cxT"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="m3b-3f-cxT">
+                                            <connections>
+                                                <segue destination="Z7R-OX-7SM" kind="showDetail" id="Dlk-aF-TXr"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="HSP-FF-Qd5">
                                             <connections>
                                                 <action selector="tangocheck" destination="afJ-R1-RRe" id="G2O-G0-NvP"/>
@@ -400,8 +409,8 @@
                                 <color key="textColor" cyan="0.0" magenta="0.0001772865653" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUP-x5-Ath">
-                                <rect key="frame" x="67" y="359" width="280" height="301"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese1.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUP-x5-Ath">
+                                <rect key="frame" x="40" y="340" width="335" height="371"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -464,7 +473,7 @@
             <objects>
                 <viewController id="Xnu-jz-YzX" customClass="chousenViewController" customModule="cheese_eitango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bfp-Xc-DKS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10F-XB-g5Y">
@@ -475,19 +484,26 @@
                                 <state key="normal" title="もう一度挑戦">
                                     <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="IjM-oq-fek"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BPk-Rc-D0V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7sn-mn-Kx5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JgB-n8-fzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1602.8985507246377" y="1373.4375"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="36o-WW-baB"/>
+        <segue reference="IjM-oq-fek"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="cheese.png" width="1000" height="1000"/>
         <image name="cheese1.png" width="283.20001220703125" height="419.51998901367188"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

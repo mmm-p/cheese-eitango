@@ -11,7 +11,7 @@ class PlayViewController: UIViewController,UITextViewDelegate {
    
     var  saveData: UserDefaults = UserDefaults.standard
     var btext = ""
-    
+    var count = 0
    
     @IBOutlet var label: UILabel!
     
@@ -48,19 +48,28 @@ class PlayViewController: UIViewController,UITextViewDelegate {
         let tango  = saveData.object(forKey: "tango") as! String
         let tangocount = tango.unicodeScalars.count
         
-        
-         if let alphabet = sender.currentTitle{
+       
+        if let alphabet = sender.currentTitle{
         
         print(alphabet)
             if tango.uppercased().contains(alphabet){
                 print("一致")
                 
                 
+                
           }else{
-        
+           
+            count = count + 1
+            print(count)
+            let numberImage = "cheese" + String(count)
+            cheeseImageView.image = UIImage(named: numberImage)
             
-            cheeseImageView.image = UIImage(named: "cheese2")
           }
+            if count == 6{
+                self.performSegue(withIdentifier: "nocheese", sender: self)
+            }
+          
+        
             
        
     }
