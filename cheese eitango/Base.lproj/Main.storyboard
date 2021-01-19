@@ -8,16 +8,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Gazou Controller-->
+        <scene sceneID="HUt-68-Fmx">
+            <objects>
+                <viewController id="vDP-cK-fHa" customClass="GazouController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yyW-1z-RcX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bPb-QT-fEo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ivq-OJ-gOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="76"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cheese_eitango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ood-6I-nt2">
-                                <rect key="frame" x="96" y="192" width="223" height="125"/>
+                                <rect key="frame" x="96" y="186" width="223" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
@@ -30,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hn-aa-Gdo">
-                                <rect key="frame" x="96" y="512" width="223" height="124"/>
+                                <rect key="frame" x="96" y="492" width="223" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
@@ -57,7 +72,7 @@
             <objects>
                 <viewController id="1Cf-P3-ySu" customClass="hozonViewController" customModule="cheese_eitango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9EI-M5-Qhg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbB-hx-Bos">
@@ -97,7 +112,7 @@
             <objects>
                 <viewController id="Z7R-OX-7SM" customClass="PlayViewController" customModule="cheese_eitango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xjc-hb-ZSr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4IX-mX-YRt">
@@ -114,66 +129,73 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-Cv-2xx">
-                                <rect key="frame" x="60" y="686" width="278" height="30"/>
+                                <rect key="frame" x="60" y="740" width="278" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBZ-kR-Bk7">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="27" height="30"/>
                                         <state key="normal" title="M"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="77T-2k-7i7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFB-fH-URL">
-                                        <rect key="frame" x="31" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="28" y="0.0" width="27" height="30"/>
                                         <state key="normal" title="N"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="Wdc-kw-bnt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKE-nt-WJI">
-                                        <rect key="frame" x="62" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="56" y="0.0" width="26.5" height="30"/>
                                         <state key="normal" title="P"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="OBZ-wc-oq3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6v-5e-RH6">
-                                        <rect key="frame" x="93" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="83.5" y="0.0" width="27" height="30"/>
                                         <state key="normal" title="Q"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="iXr-g3-YPb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdH-t6-szu">
-                                        <rect key="frame" x="124" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="111.5" y="0.0" width="27" height="30"/>
                                         <state key="normal" title="R"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="N6E-RY-2yA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK0-4v-Ep0">
-                                        <rect key="frame" x="155" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="139.5" y="0.0" width="27" height="30"/>
                                         <state key="normal" title="S"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="eJW-Cd-fZO"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2h-N8-pmU">
+                                        <rect key="frame" x="167.5" y="0.0" width="27" height="30"/>
+                                        <state key="normal" title="H"/>
+                                        <connections>
+                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="OOR-6V-rVP"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kve-GW-bhp">
-                                        <rect key="frame" x="186" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="195.5" y="0.0" width="26.5" height="30"/>
                                         <state key="normal" title="T"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="QKB-iu-NFh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaH-HT-PWP">
-                                        <rect key="frame" x="217" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="223" y="0.0" width="27" height="30"/>
                                         <state key="normal" title="V"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="guu-ei-uY1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us2-De-Auc">
-                                        <rect key="frame" x="248" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="251" y="0.0" width="27" height="30"/>
                                         <state key="normal" title="W"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="G6Z-K8-sR3"/>
@@ -182,7 +204,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="3fN-xu-gsy">
-                                <rect key="frame" x="147" y="716" width="96" height="30"/>
+                                <rect key="frame" x="147" y="770" width="96" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPz-42-Nf7">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -224,72 +246,72 @@
                                 <rect key="frame" x="60" y="661" width="300" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI3-g6-xto">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="33.5" height="30"/>
                                         <state key="normal" title="B"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="Jqn-hK-sfA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3f-8b-L95">
-                                        <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="33.5" y="0.0" width="33" height="30"/>
                                         <state key="normal" title="C"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="LCE-Op-fge"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdt-7v-kkl">
-                                        <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="66.5" y="0.0" width="33.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cDN-OU-ApB"/>
+                                        </constraints>
                                         <state key="normal" title="D"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="Qcs-0u-vGJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C5-jy-4n7">
-                                        <rect key="frame" x="90" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="100" y="0.0" width="33.5" height="30"/>
                                         <state key="normal" title="F"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="4Sd-Ca-RWa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SND-sl-jgZ">
-                                        <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="133.5" y="0.0" width="33" height="30"/>
                                         <state key="normal" title="G"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="9BC-MM-XcM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIG-Kg-Dcd">
-                                        <rect key="frame" x="150" y="0.0" width="30" height="30"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2h-N8-pmU">
-                                        <rect key="frame" x="180" y="0.0" width="30" height="30"/>
-                                        <state key="normal" title="H"/>
-                                        <connections>
-                                            <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="OOR-6V-rVP"/>
-                                        </connections>
+                                        <rect key="frame" x="166.5" y="0.0" width="33.5" height="30"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pY-NC-od4">
-                                        <rect key="frame" x="210" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="200" y="0.0" width="33.5" height="30"/>
                                         <state key="normal" title="J"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="wbs-fj-LvM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7t-ia-hrl">
-                                        <rect key="frame" x="240" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="233.5" y="0.0" width="33" height="30"/>
                                         <state key="normal" title="K"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="7Y3-ge-3s4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLb-1t-M02">
-                                        <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="266.5" y="0.0" width="33.5" height="30"/>
                                         <state key="normal" title="L"/>
                                         <connections>
                                             <action selector="checkWithSender:" destination="Z7R-OX-7SM" eventType="touchUpInside" id="W9E-YA-TF7"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PI3-g6-xto" secondAttribute="bottom" id="Bpw-B3-NEL"/>
+                                    <constraint firstAttribute="bottom" secondItem="y7t-ia-hrl" secondAttribute="bottom" id="Fcc-TI-HPu"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _ _ " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4X-9m-7FS">
                                 <rect key="frame" x="100" y="556" width="214" height="61"/>
@@ -299,7 +321,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-Zw-cH5">
-                                <rect key="frame" x="6" y="209" width="403" height="298"/>
+                                <rect key="frame" x="6" y="203" width="403" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -334,7 +356,7 @@
             <objects>
                 <viewController id="afJ-R1-RRe" customClass="tangonyuuryokuViewController" customModule="cheese_eitango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgo-Zr-zdh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="s1s-8t-sqv">
@@ -398,7 +420,7 @@
             <objects>
                 <viewController id="U41-6s-dG1" customClass="SEIKAIViewController" customModule="cheese_eitango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jS5-LB-L6h">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正解です！チーズが残りました！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsa-X3-RNZ">
@@ -432,7 +454,7 @@
             <objects>
                 <viewController id="tVW-s8-WRb" customClass="cheesenakunaruViewController" customModule="cheese_eitango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pSf-hb-XjU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="残念！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbn-pa-a9m">
@@ -473,7 +495,7 @@
             <objects>
                 <viewController id="Xnu-jz-YzX" customClass="chousenViewController" customModule="cheese_eitango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bfp-Xc-DKS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10F-XB-g5Y">
@@ -500,8 +522,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="36o-WW-baB"/>
-        <segue reference="IjM-oq-fek"/>
+        <segue reference="6oS-LT-IaX"/>
+        <segue reference="Dlk-aF-TXr"/>
+        <segue reference="eIX-nd-asz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cheese1.png" width="283.20001220703125" height="419.51998901367188"/>

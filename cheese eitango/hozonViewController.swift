@@ -41,6 +41,7 @@ class hozonViewController: UIViewController {
         
        
         saveData.set(titleTextField.text, forKey: "tango")
+       
         let alert: UIAlertController = UIAlertController(title: "保存", message: "英単語を保存します",
         preferredStyle: .alert)
         alert.addAction(

@@ -10,7 +10,7 @@ import UIKit
 class PlayViewController: UIViewController,UITextViewDelegate {
    
     var  saveData: UserDefaults = UserDefaults.standard
-    var btext = ""
+    var blindText = ""
     var count = 0
    
     @IBOutlet var label: UILabel!
@@ -31,10 +31,10 @@ class PlayViewController: UIViewController,UITextViewDelegate {
         print(tangocount)
         
         for _ in tango{
-         btext += "_ "
+         blindText += "_ "
          
         }
-        label.text = btext
+        label.text = blindText
         
        
        
@@ -53,16 +53,27 @@ class PlayViewController: UIViewController,UITextViewDelegate {
         
         print(alphabet)
             if tango.uppercased().contains(alphabet){
-                print("一致")
                 
                 
+            
+                for i in 0...tangocount  {
+                    if let range = tango.uppercased().suffix(tangocount-i).range(of: alphabet){
+                       
+                        blindText.replaceSubrange(range, with: alphabet)
+                        
+                        label.text = blindText
+                        print(blindText)
+                      
+
+                }
+                }
                 
           }else{
            
             count = count + 1
             print(count)
             let numberImage = "cheese" + String(count)
-            cheeseImageView.image = UIImage(named: numberImage)
+            cheeseImageView.image = UIImage(named:numberImage)
             
           }
             if count == 6{
