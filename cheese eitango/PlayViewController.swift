@@ -11,6 +11,8 @@ class PlayViewController: UIViewController,UITextViewDelegate {
    
     var  saveData: UserDefaults = UserDefaults.standard
     var blindText = ""
+    var blindText1 = ""
+    var blindText2 = ""
     var count = 0
    
     @IBOutlet var label: UILabel!
@@ -53,20 +55,32 @@ class PlayViewController: UIViewController,UITextViewDelegate {
         
         print(alphabet)
             if tango.uppercased().contains(alphabet){
-                
-                
-            
-                for i in 0...tangocount  {
-                    if let range = tango.uppercased().suffix(tangocount-i).range(of: alphabet){
+                blindText = ""
+                let bunkatuArray = Array(tango.uppercased())
+               print(bunkatuArray)
+                for i in bunkatuArray {
+                   
+                      print(i)
+                        if String(i) == alphabet{
+                            blindText1 += alphabet + " "
+                            print(blindText1)
+
+                            
+                        }else{
+                            blindText2 += "_ "
+                           print(blindText2)
+
+                        }
                        
-                        blindText.replaceSubrange(range, with: alphabet)
                         
-                        label.text = blindText
-                        print(blindText)
+                       
+                       
                       
 
                 }
-                }
+         label.text = blindText1 + blindText2
+                
+                
                 
           }else{
            
@@ -75,16 +89,19 @@ class PlayViewController: UIViewController,UITextViewDelegate {
             let numberImage = "cheese" + String(count)
             cheeseImageView.image = UIImage(named:numberImage)
             
-          }
+          
             if count == 6{
                 self.performSegue(withIdentifier: "nocheese", sender: self)
             }
+          }
           
         
             
        
     }
+        label.text = blindText1 + blindText2
     }
+    
     
     
     
