@@ -14,7 +14,8 @@ class PlayViewController: UIViewController,UITextViewDelegate {
     var blindText1 = ""
     var blindText2 = ""
     var count = 0
-   
+    var arrayString: [String] = []
+    
     @IBOutlet var label: UILabel!
     
     @IBOutlet  var cheeseImageView: UIImageView!
@@ -33,10 +34,10 @@ class PlayViewController: UIViewController,UITextViewDelegate {
         print(tangocount)
         
         for _ in tango{
-         blindText += "_ "
+            arrayString.append("_ ")
          
         }
-        label.text = blindText
+        label.text = arrayString.joined(separator: "")
         
        
        
@@ -62,13 +63,13 @@ class PlayViewController: UIViewController,UITextViewDelegate {
                    
                       print(i)
                         if String(i) == alphabet{
-                            blindText1 += alphabet + " "
-                            print(blindText1)
+                            arrayString.append(alphabet + " ")
+                            print(arrayString)
 
                             
                         }else{
-                            blindText2 += "_ "
-                           print(blindText2)
+                            arrayString.append("_ ")
+                           print(arrayString)
 
                         }
                        
@@ -78,7 +79,7 @@ class PlayViewController: UIViewController,UITextViewDelegate {
                       
 
                 }
-         label.text = blindText1 + blindText2
+         label.text = arrayString.joined(separator: "")
                 
                 
                 
@@ -99,7 +100,7 @@ class PlayViewController: UIViewController,UITextViewDelegate {
             
        
     }
-        label.text = blindText1 + blindText2
+       
     }
     
     
