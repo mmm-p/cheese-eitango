@@ -20,6 +20,9 @@ class tangonyuuryokuViewController: UIViewController, UITextViewDelegate {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func unwindPrev(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+
+        }
     @IBAction func tangocheck(){
         let wtango = saveData.object(forKey: "tango") as! String
         saveData.set(titleTextField.text, forKey: "new")

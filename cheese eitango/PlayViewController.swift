@@ -34,16 +34,19 @@ class PlayViewController: UIViewController,UITextViewDelegate {
         print(tangocount)
         
         for _ in tango{
-            arrayString.append("_ ")
+            arrayString.append("_")
             
         }
-        label.text = arrayString.joined(separator: "")
+        label.text = arrayString.joined(separator: " ")
         
         
         
         
         
     }
+    @IBAction func unwindPrev(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+
+        }
     
     @IBAction func check (sender: UIButton){
         
@@ -64,13 +67,9 @@ class PlayViewController: UIViewController,UITextViewDelegate {
                     print(i)
                     
                     if String(bunkatuArray[i]) == alphabet{
-                        arrayString[i] = alphabet + ""
+                        arrayString[i] = alphabet
                         print(arrayString)
                         
-                        
-                    }else{
-                        arrayString[i] = "_ "
-                        print(arrayString)
                         
                     }
                     
@@ -78,9 +77,8 @@ class PlayViewController: UIViewController,UITextViewDelegate {
                     
                     
                     
-                    
                 }
-                label.text = arrayString.joined(separator: "")
+                label.text = arrayString.joined(separator: " ")
                 
                 
                 

@@ -11,6 +11,9 @@ class SEIKAIViewController: UIViewController {
 
     @IBOutlet var label: UILabel!
     @IBOutlet var cheeseImage2: UIImageView!
+    @IBAction func seikai(){
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
