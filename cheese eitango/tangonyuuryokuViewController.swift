@@ -9,49 +9,58 @@ import UIKit
 
 class tangonyuuryokuViewController: UIViewController, UITextViewDelegate {
     var  saveData: UserDefaults = UserDefaults.standard
-   
+    
     @IBOutlet var label: UILabel!
     @IBOutlet var titleTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         
-         
-
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     @IBAction func unwindPrev(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
-
-        }
+        
+    }
     @IBAction func tangocheck(){
         let wtango = saveData.object(forKey: "tango") as! String
         saveData.set(titleTextField.text, forKey: "new")
         let alert: UIAlertController = UIAlertController(title: "保存", message: "英単語を保存します",
-        preferredStyle: .alert)
+                                                         preferredStyle: .alert)
+        print("OK")
         alert.addAction(
+            
             UIAlertAction(
+                
                 title:"OK",
                 style: .default,
-                handler: { action in
-                    print("ボタンが押されました")
-        
-                }))
-       
-        
-        
-        
-    let newtango = saveData.object(forKey: "new")as! String
-        
-    if wtango == newtango{
-          self.performSegue(withIdentifier: "seikai", sender: nil)
-    }
-    else{
-        self.performSegue(withIdentifier: "zannen", sender: nil)
-    }
+                  handler: {action in
+                    print("ボタンが押されました2")
+                    let newtango = self.saveData.object(forKey: "new")as! String
+                    if wtango == newtango{
+                        self.performSegue(withIdentifier: "seikai", sender: nil)
+                    }
+                    else{
+                        self.performSegue(withIdentifier: "zannen", sender: nil)
+                    }
+                  }
+               
+                
+                
+            ))
         present(alert, animated: true, completion: nil)
     }
-    }
     
     
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

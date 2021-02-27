@@ -15,11 +15,16 @@ class ViewController: UIViewController {
     @IBAction func play(){
         
     }
+    @IBOutlet weak var button: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+       
+        
     }
+    
 
 
 }

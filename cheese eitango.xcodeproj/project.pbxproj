@@ -14,6 +14,7 @@
 		FA21BE43255FE906002F886F /* cheesenakunaruViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE42255FE906002F886F /* cheesenakunaruViewController.swift */; };
 		FA21BE48255FE9B7002F886F /* chousenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE47255FE9B7002F886F /* chousenViewController.swift */; };
 		FA21BE50255FECDC002F886F /* hozonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21BE4F255FECDC002F886F /* hozonViewController.swift */; };
+		FA3AA25025CEB0E800AEE9EE /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AA24F25CEB0E800AEE9EE /* Button.swift */; };
 		FA56631A25A1FB9E00DCB36C /* cheese3.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56631925A1FB9E00DCB36C /* cheese3.png */; };
 		FA56631F25A1FBA800DCB36C /* cheese4.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56631E25A1FBA800DCB36C /* cheese4.png */; };
 		FA56632425A1FBB400DCB36C /* cheese5.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56632325A1FBB400DCB36C /* cheese5.png */; };
@@ -54,6 +55,7 @@
 		FA21BE42255FE906002F886F /* cheesenakunaruViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cheesenakunaruViewController.swift; sourceTree = "<group>"; };
 		FA21BE47255FE9B7002F886F /* chousenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chousenViewController.swift; sourceTree = "<group>"; };
 		FA21BE4F255FECDC002F886F /* hozonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hozonViewController.swift; sourceTree = "<group>"; };
+		FA3AA24F25CEB0E800AEE9EE /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		FA56631925A1FB9E00DCB36C /* cheese3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheese3.png; sourceTree = "<group>"; };
 		FA56631E25A1FBA800DCB36C /* cheese4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheese4.png; sourceTree = "<group>"; };
 		FA56632325A1FBB400DCB36C /* cheese5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheese5.png; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				FA21BE2D255FE2DA002F886F /* PlayViewController.swift */,
 				FA21BE35255FE37A002F886F /* tangonyuuryokuViewController.swift */,
 				FAC172D32556BAC4006F6363 /* Main.storyboard */,
+				FA3AA24F25CEB0E800AEE9EE /* Button.swift */,
 				FA21BE4F255FECDC002F886F /* hozonViewController.swift */,
 				FA56633025A1FE4600DCB36C /* cheese2.png */,
 				FA56631925A1FB9E00DCB36C /* cheese3.png */,
@@ -305,6 +308,7 @@
 				FAC172D22556BAC4006F6363 /* ViewController.swift in Sources */,
 				FA21BE3E255FE877002F886F /* SEIKAIViewController.swift in Sources */,
 				FAC172CE2556BAC4006F6363 /* AppDelegate.swift in Sources */,
+				FA3AA25025CEB0E800AEE9EE /* Button.swift in Sources */,
 				FA21BE2E255FE2DA002F886F /* PlayViewController.swift in Sources */,
 				FA21BE43255FE906002F886F /* cheesenakunaruViewController.swift in Sources */,
 				FA21BE50255FECDC002F886F /* hozonViewController.swift in Sources */,

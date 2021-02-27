@@ -43,10 +43,19 @@ class PlayViewController: UIViewController,UITextViewDelegate {
         
         
         
+        
     }
-    @IBAction func unwindPrev(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
-
-        }
+    
+    @IBAction func cancel(_sender: Any){
+        self.dismiss(animated: true, completion: nil)
+        //let vc = UIViewController()
+        // 遷移方法にフルスクリーンを指定
+       // vc.modalPresentationStyle = .fullScreen
+        //self.present(vc, animated: true, completion: nil)
+       
+         
+       
+    }
     
     @IBAction func check (sender: UIButton){
         
@@ -92,6 +101,7 @@ class PlayViewController: UIViewController,UITextViewDelegate {
                 
                 if count == 6{
                     self.performSegue(withIdentifier: "nocheese", sender: self)
+                    
                 }
             }
             
