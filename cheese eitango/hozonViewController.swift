@@ -31,17 +31,11 @@ class hozonViewController: UIViewController {
     
     @IBAction func savetango(){
         
-        //Userdefaults.set(titleTextField.text, forKey: "title")
-       // var text = titleTextField!.text
-        
-       // let Int: [Int] = []
-       // maxspeed = text.chrachters.count
-        //Userdefaults.set(maxspeed, forKey: "udMaxSpeed")
-       // var gettango : [String] = Userdefaults.string(forKey: "title") as! [String]
+       
         
        
         saveData.set(titleTextField.text, forKey: "tango")
-       
+        
         let alert: UIAlertController = UIAlertController(title: "保存", message: "英単語を保存します",
         preferredStyle: .alert)
         alert.addAction(

@@ -11,7 +11,7 @@ class cheesenakunaruViewController: UIViewController {
 
     @IBOutlet var label: UILabel!
     @IBAction func chousen(){
-        self.performSegue(withIdentifier: "chousen", sender: nil)
+        navigationController?.popToRootViewController(animated: true)
 
     }
     override func viewDidLoad() {

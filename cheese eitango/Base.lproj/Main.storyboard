@@ -31,6 +31,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hn-aa-Gdo">
+                                <rect key="frame" x="107" y="523.66666666666663" width="214" height="125"/>
+                                <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="ゲームをする">
+                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z7R-OX-7SM" kind="show" id="tMv-kC-MvX"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ood-6I-nt2">
                                 <rect key="frame" x="107" y="186" width="214" height="92.666666666666686"/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,17 +55,6 @@
                                     <segue destination="1Cf-P3-ySu" kind="show" id="Wdj-ut-UI3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hn-aa-Gdo">
-                                <rect key="frame" x="107" y="544.66666666666663" width="214" height="125"/>
-                                <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" title="ゲームをする">
-                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Z7R-OX-7SM" kind="show" id="tMv-kC-MvX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,7 +64,7 @@
                             <constraint firstItem="Ood-6I-nt2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="9yM-vs-qJz"/>
                             <constraint firstItem="Ood-6I-nt2" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="Af0-4d-Wqh"/>
                             <constraint firstItem="0hn-aa-Gdo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F9T-4n-Q2t"/>
-                            <constraint firstItem="0hn-aa-Gdo" firstAttribute="top" secondItem="Ood-6I-nt2" secondAttribute="bottom" constant="266" id="aMi-KR-NR7"/>
+                            <constraint firstItem="0hn-aa-Gdo" firstAttribute="top" secondItem="Ood-6I-nt2" secondAttribute="bottom" constant="245" id="Nxa-53-1LC"/>
                             <constraint firstItem="0hn-aa-Gdo" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="mSF-DM-E5U"/>
                             <constraint firstItem="0hn-aa-Gdo" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.155473" id="uLY-Sj-g8E"/>
                         </constraints>
@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="76.339285714285708"/>
+            <point key="canvasLocation" x="1047.1962616822429" y="75.809935205183592"/>
         </scene>
         <!--Hozon View Controller-->
         <scene sceneID="9RK-Mx-Qw1">
@@ -236,9 +236,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheese1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-Zw-cH5">
-                                <rect key="frame" x="6" y="203" width="403" height="298"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheese1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-Zw-cH5">
+                                <rect key="frame" x="66.666666666666686" y="279" width="295" height="298"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-WO-PDr">
                                 <rect key="frame" x="60" y="732" width="314" height="30"/>
@@ -311,8 +310,8 @@
                                     <navigationItem title="Title" id="Ati-n3-lQl"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWW-6b-wgz">
-                                <rect key="frame" x="96.333333333333329" y="156" width="235.33333333333337" height="104"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWW-6b-wgz">
+                                <rect key="frame" x="97" y="117" width="235.33333333333337" height="104"/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <state key="normal" title="単語がわかった">
@@ -327,8 +326,10 @@
                         <viewLayoutGuide key="safeArea" id="0xn-d4-Jrb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Z4X-9m-7FS" firstAttribute="top" secondItem="2aG-Zw-cH5" secondAttribute="bottom" constant="49.670000000000002" id="02c-ZS-t7Z"/>
                             <constraint firstItem="0xn-d4-Jrb" firstAttribute="trailing" secondItem="gdW-WO-PDr" secondAttribute="trailing" constant="54" id="56Q-HQ-q5L"/>
                             <constraint firstItem="Z4X-9m-7FS" firstAttribute="centerX" secondItem="xjc-hb-ZSr" secondAttribute="centerX" id="9Wa-nj-Ic8"/>
+                            <constraint firstItem="2aG-Zw-cH5" firstAttribute="centerX" secondItem="xjc-hb-ZSr" secondAttribute="centerX" id="Dux-SW-0Ct"/>
                             <constraint firstItem="3fN-xu-gsy" firstAttribute="top" secondItem="x0F-Cv-2xx" secondAttribute="bottom" id="Ft6-fT-LS4"/>
                             <constraint firstItem="tWW-6b-wgz" firstAttribute="top" secondItem="61R-bw-qBZ" secondAttribute="bottom" constant="68" id="GOt-nd-wEN"/>
                             <constraint firstItem="tWW-6b-wgz" firstAttribute="height" secondItem="0xn-d4-Jrb" secondAttribute="height" multiplier="0.137748" id="Gd7-xL-pxi"/>
@@ -343,6 +344,8 @@
                             <constraint firstItem="3fN-xu-gsy" firstAttribute="leading" secondItem="0xn-d4-Jrb" secondAttribute="leading" constant="147" id="hVc-G9-dgK"/>
                             <constraint firstItem="tWW-6b-wgz" firstAttribute="centerX" secondItem="xjc-hb-ZSr" secondAttribute="centerX" id="im4-WE-ITI"/>
                             <constraint firstItem="x0F-Cv-2xx" firstAttribute="top" secondItem="gdW-WO-PDr" secondAttribute="bottom" constant="8" symbolic="YES" id="mvm-iW-Dbw"/>
+                            <constraint firstItem="2aG-Zw-cH5" firstAttribute="width" secondItem="0xn-d4-Jrb" secondAttribute="width" multiplier="0.689252" id="vna-Y9-avA"/>
+                            <constraint firstItem="2aG-Zw-cH5" firstAttribute="height" secondItem="0xn-d4-Jrb" secondAttribute="height" multiplier="0.394702" id="wGa-1K-RvV"/>
                             <constraint firstItem="0xn-d4-Jrb" firstAttribute="bottom" secondItem="3fN-xu-gsy" secondAttribute="bottom" constant="13" id="wtu-id-18G"/>
                         </constraints>
                     </view>
@@ -351,7 +354,6 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bP4-f5-FjD">
                             <connections>
                                 <action selector="cancelWith_sender:" destination="Z7R-OX-7SM" id="cwe-8k-QPZ"/>
-                                <segue destination="0o0-r0-95N" kind="show" id="bHA-68-fuD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -364,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWb-Zo-CoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169.56521739130437" y="740.625"/>
+            <point key="canvasLocation" x="168.22429906542055" y="740.60475161987051"/>
         </scene>
         <!--Tangonyuuryoku View Controller-->
         <scene sceneID="otM-ns-ztL">
@@ -381,8 +383,9 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-sp-r0I">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-sp-r0I">
                                 <rect key="frame" x="64.333333333333343" y="251.33333333333337" width="299.33333333333326" height="34"/>
+                                <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -390,6 +393,7 @@
                         <viewLayoutGuide key="safeArea" id="RXb-0P-XXA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xhJ-sp-r0I" firstAttribute="top" secondItem="DWc-Kk-8fR" secondAttribute="bottom" constant="42" id="1C9-eV-NOc"/>
                             <constraint firstItem="DWc-Kk-8fR" firstAttribute="centerX" secondItem="hgo-Zr-zdh" secondAttribute="centerX" id="1QV-o6-mzT"/>
                             <constraint firstItem="xhJ-sp-r0I" firstAttribute="width" secondItem="RXb-0P-XXA" secondAttribute="width" multiplier="0.7" id="3sP-Bj-HBg"/>
                             <constraint firstItem="DWc-Kk-8fR" firstAttribute="width" secondItem="RXb-0P-XXA" secondAttribute="width" multiplier="0.8" id="4go-UE-Ag9"/>
@@ -399,7 +403,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8eC-gh-uNT">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="s9t-7B-5Zc"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="s9t-7B-5Zc">
+                            <connections>
+                                <action selector="cancel" destination="afJ-R1-RRe" id="ci4-f0-QDb"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="8NJ-2z-KmE">
                             <connections>
                                 <action selector="tangocheck" destination="afJ-R1-RRe" id="fOZ-d8-ga9"/>
@@ -436,7 +444,7 @@
                                 <rect key="frame" x="66.666666666666686" y="256.33333333333331" width="295" height="452.99999999999994"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeR-e0-WMR">
-                                <rect key="frame" x="144" y="740.66666666666663" width="140" height="75.666666666666629"/>
+                                <rect key="frame" x="107" y="740.66666666666663" width="214" height="75.666666666666629"/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
                                 <state key="normal" title="もう一回やる">
@@ -444,13 +452,13 @@
                                 </state>
                                 <connections>
                                     <action selector="seikai" destination="U41-6s-dG1" eventType="touchUpInside" id="eJW-UG-0Vo"/>
-                                    <segue destination="0o0-r0-95N" kind="show" id="Sma-ld-k4P"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EJz-yK-gBc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aeR-e0-WMR" firstAttribute="width" secondItem="EJz-yK-gBc" secondAttribute="width" multiplier="0.5" id="6QF-HH-GWl"/>
                             <constraint firstItem="aUP-x5-Ath" firstAttribute="height" secondItem="EJz-yK-gBc" secondAttribute="height" multiplier="0.6" id="77Q-je-8Jn"/>
                             <constraint firstItem="aUP-x5-Ath" firstAttribute="centerX" secondItem="jS5-LB-L6h" secondAttribute="centerX" id="LJI-Q8-Kj6"/>
                             <constraint firstItem="lsa-X3-RNZ" firstAttribute="width" secondItem="EJz-yK-gBc" secondAttribute="width" multiplier="0.85" id="OcW-T8-5tU"/>
@@ -463,7 +471,6 @@
                             <constraint firstItem="lsa-X3-RNZ" firstAttribute="centerX" secondItem="jS5-LB-L6h" secondAttribute="centerX" id="p8A-65-2vV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="R8R-rQ-ai2"/>
                     <connections>
                         <outlet property="cheeseImage2" destination="aUP-x5-Ath" id="0wt-1T-e2Y"/>
                         <outlet property="label" destination="lsa-X3-RNZ" id="wu1-fD-mtX"/>
@@ -499,7 +506,6 @@
                                 </state>
                                 <connections>
                                     <action selector="chousen" destination="tVW-s8-WRb" eventType="touchUpInside" id="7Ge-rm-57S"/>
-                                    <segue destination="0o0-r0-95N" kind="show" identifier="chousen" id="Pju-7j-58z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -514,7 +520,6 @@
                             <constraint firstItem="7ZM-Rl-JBj" firstAttribute="width" secondItem="gJN-ZL-lpK" secondAttribute="width" multiplier="0.7" id="sfG-ev-K07"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bci-U9-Sm3"/>
                     <connections>
                         <outlet property="label" destination="Gbn-pa-a9m" id="O5I-Nf-8dG"/>
                     </connections>
@@ -533,14 +538,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10F-XB-g5Y">
                                 <rect key="frame" x="64.333333333333343" y="417" width="299.33333333333326" height="136"/>
-                                <color key="backgroundColor" red="0.72549019609999998" green="0.80000000000000004" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
                                 <state key="normal" title="もう一度挑戦">
                                     <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="0o0-r0-95N" kind="show" id="Y1Z-s5-o5c"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BPk-Rc-D0V"/>
@@ -578,9 +580,6 @@
             <point key="canvasLocation" x="137.68115942028987" y="76.339285714285708"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Sma-ld-k4P"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="cheese1.png" width="283.20001220703125" height="419.51998901367188"/>
         <systemColor name="systemBackgroundColor">

@@ -20,12 +20,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-        
-    }
+        var  saveData: UserDefaults = UserDefaults.standard
+        let firstTango = saveData.object(forKey: "tango") as! String
+        let length = firstTango.count
+        if length == 0{
+            saveData.set(forkey: "tango)
+        }
     
 
 
 }
 
+}

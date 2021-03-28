@@ -12,7 +12,7 @@ class SEIKAIViewController: UIViewController {
     @IBOutlet var label: UILabel!
     @IBOutlet var cheeseImage2: UIImageView!
     @IBAction func seikai(){
-        
+        navigationController?.popToRootViewController(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

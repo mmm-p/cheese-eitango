@@ -47,7 +47,7 @@ class PlayViewController: UIViewController,UITextViewDelegate {
     }
     
     @IBAction func cancel(_sender: Any){
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
         //let vc = UIViewController()
         // 遷移方法にフルスクリーンを指定
        // vc.modalPresentationStyle = .fullScreen

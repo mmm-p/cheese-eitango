@@ -20,7 +20,8 @@ class tangonyuuryokuViewController: UIViewController, UITextViewDelegate {
         
         // Do any additional setup after loading the view.
     }
-    @IBAction func unwindPrev(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+    @IBAction func cancel() {
+        self.navigationController?.popViewController(animated: true)
         
     }
     @IBAction func tangocheck(){
